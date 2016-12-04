@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Pedaler의 기술개발 블로그
+description:      페달러는 phoneGap,react.js,Spring,node.js 기반으로 이루어져있습니다.
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
@@ -9,9 +9,9 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           pedaler
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
+  bio:            "패달러는 최고의 개발진으로 이루어져있습니다."
   email:          you@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
