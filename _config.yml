@@ -11,7 +11,7 @@ url:
 owner:
   name:           team pedaler
   avatar:         avatar.jpg
-  bio:            "페달러는 phoneGap,react.js,Spring,node.js 기반으로 이루어져있습니다."
+  bio:            "페달러는 phoneGap,react.js,Spring\n,node.js 기반으로 이루어져있습니다."
   email:          you@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
@@ -24,6 +24,13 @@ owner:
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
   google_plus:
+
+owner:
+  name:           team pedaler
+  avatar:         avatar.jpg
+  bio:            "페달러는 phoneGap,react.js,Spring\n,node.js 기반으로 이루어져있습니다."
+  email:          you@email.com
+
 
 # Background image to be tiled on all pages
 background: 
