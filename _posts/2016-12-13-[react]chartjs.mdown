@@ -1,0 +1,45 @@
+---
+layout: post
+title: react chartjs적용하기
+description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+modified: 2015-12-13
+tags: [chartjs]
+---
+
+##react-chartjs..
+
+
+react-chartjs는 chart.js 2.0대 버전을지원하지않는다.    
+현재 페달러에서 받은 react-chartjs는   
+    
+    "react-chartjs": "^0.8.0",  
+    "chart.js": "^2.4.0",  
+였다.
+
+그래서 react-chartjs2를 받기로하였다.  
+
+해보고오겠다.
+
+된다... 이제 꾸겨넣기만 하면됐다.
+
+####chart.js를위한삽질..
+
+    1. react-chartjs를 받았더니   
+      cannot find module chart.js 에러가났다.  
+      왜났는지 몰랐다.  
+    2. chart.js도 받아줘야한다는것을 깨닫고 받았다.  
+    3. 라인차트를 띄우려는데 ~is not a function에러가 났다.  
+    4. 버전문제인것을 깨닫고 react-chartjs2를 받았다.  
+    5. 삽질하러간다..    
+    6. 이젠잘되는구나....이제시작이네요 
+
+
+
+**chart.js 공홈**  
+http://www.chartjs.org/
+
+**react-chartjs**  
+https://www.npmjs.com/package/react-chartjs
+
+**react-chart2js**
+https://www.npmjs.com/package/react-chartjs2
