@@ -21,7 +21,9 @@ tags: [sample post]
   
    
       
-###1.react-Boostrap 설치.
+1.react-Boostrap 설치.
+----------
+
 
 react-boostrap의 사용은 무지막지하게 쉽다.
 
@@ -39,7 +41,9 @@ npm install react-bootstrap --save
 
 메인 html에 스타일시트를 추가해준다.
 
-###2.Component 사용
+2.Component 사용
+----------
+
 
 리액트는 참으로 많은 컨포넌트들을 제공해주고 쉽게 가져다 쓸 수 있다.
 필자는 react Modal 을 사용하려 했고 이를 쓰기위해선.
@@ -57,7 +61,9 @@ import { Popover,Button,Modal } from 'react-bootstrap';
 boostrap에서 제공해주는 컨포넌트 예제들을 그대로 가져다 추가해주면된다.
 
 
-##3.주의
+3.주의
+----------
+
 * 리액트를 어느정도 다루어본 사람이라면 크게 문제가 되진 않겠지만.. 필자와같이 초보자에겐 es5,es6 표기법이 조금 달라 혼동이 있을 수있다.
 
 * boostrap에서 제공해주는 컨포넌트 예제들은 모두 es5기준으로 제공하고 있으니 해당 es6로는 어떻게 표기되고 작동되는지를 명확히 알아야할것이다.
