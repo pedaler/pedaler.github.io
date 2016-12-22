@@ -6,14 +6,23 @@ modified: 2015-12-13
 tags: [chartjs]
 ---
 
+<<<<<<< HEAD
 ##react-chartjs..  
+=======
+react-chartjs..
+====
+>>>>>>> 5e1f512ac8742ac3b2602d610f70070a193ccf84
 
 
 react-chartjs는 chart.js 2.0대 버전을지원하지않는다.    
 현재 페달러에서 받은 react-chartjs는   
     
-    "react-chartjs": "^0.8.0",  
-    "chart.js": "^2.4.0",  
+
+~~~
+"react-chartjs": "^0.8.0",  
+    "chart.js": "^2.4.0",    
+~~~
+
 였다.
 
 그래서 react-chartjs2를 받기로하였다.  
@@ -22,8 +31,9 @@ react-chartjs는 chart.js 2.0대 버전을지원하지않는다.
 
 된다... 이제 꾸겨넣기만 하면됐다.
 
-####chart.js를위한삽질..
-
+chart.js를위한삽질..
+====
+~~~
     1. react-chartjs를 받았더니   
       cannot find module chart.js 에러가났다.  
       왜났는지 몰랐다.  
@@ -33,13 +43,16 @@ react-chartjs는 chart.js 2.0대 버전을지원하지않는다.
     5. 삽질하러간다..    
     6. 이젠잘되는구나....이제시작이네요 
 
-
+~~~
 
 **chart.js 공홈**  
-http://www.chartjs.org/
+
+<http://www.chartjs.org/>
 
 **react-chartjs**  
-https://www.npmjs.com/package/react-chartjs
+
+<https://www.npmjs.com/package/react-chartjs>
 
 **react-chart2js**
-https://www.npmjs.com/package/react-chartjs2
+
+<https://www.npmjs.com/package/react-chartjs2>
