@@ -6,7 +6,7 @@ modified: 2015-12-13
 tags: [chartjs]
 ---
 
-##react-chartjs..
+##react-chartjs..  
 
 
 react-chartjs는 chart.js 2.0대 버전을지원하지않는다.    
