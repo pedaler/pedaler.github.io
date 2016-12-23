@@ -7,7 +7,7 @@ tags: [react google map][api key security]
   
 ---
 
-###[React] 구글맵 API Key는 script태그에서 안전할까?
+###   [React] 구글맵 API Key는 script태그에서 안전할까?
 <br><br>
 구글맵을 사용하려면 구글맵에서 제공해주는 API key로 요청해야한다.
 
