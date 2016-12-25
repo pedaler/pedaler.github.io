@@ -1,6 +1,6 @@
 title:            Pedaler의 기술개발 블로그
 description:      페달러는 phoneGap,react.js,Spring,node.js 기반으로 이루어져있습니다.
-disqus_shortname: 
+disqus_shortname:
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
@@ -14,29 +14,29 @@ owner:
   bio:            "페달러는 phoneGap,react.js,Spring\n,node.js 기반으로 이루어져있습니다."
   email:          you@email.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
+  twitter:
+  facebook:
+  github:
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr:
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics:
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
-future:      false  # publish future dated posts --  true, false (default) 
+future:      false  # publish future dated posts --  true, false (default)
 highlighter: rouge
 markdown:    kramdown
 gems:
@@ -62,9 +62,25 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
-include: 
+
+comments :
+  provider : facebook #FIXME
+  disqus :
+    short_name : abc  #FIXME
+  livefyre :
+    site_id : abc #FIXME
+  intensedebate :
+    account : abc #FIXME
+  facebook :
+    appid : abc   #FIXME
+    num_posts: 5
+    width: 640
+    colorscheme: light
+
+
+include:
   - .htaccess
-exclude: 
+exclude:
   - "*.less"
   - "*.sublime-project"
   - "*.sublime-workspace"

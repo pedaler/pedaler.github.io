@@ -12,7 +12,7 @@ tags: [sample post]
 
 
 <br>
-0. 무엇을 할테냐?
+0.무엇을 할테냐?
 ----------
 
 cordova push plugin을 통해 푸시 노티피케이션을 구현해본다.
@@ -32,7 +32,7 @@ cordova push plugin을 통해 푸시 노티피케이션을 구현해본다.
 <br>  
 
 
-1. react 에서 pushNotification이용하기
+1.react 에서 pushNotification이용하기
 ----------
 
 
@@ -143,7 +143,7 @@ function onNotificationAPN (event) {
 
 
 <br>
-2. ios Push 인증서 설정하기.
+2.ios Push 인증서 설정하기.
 ----------
 
 authKey를 기반으로한 푸시 인증서를 생성해보자.
@@ -179,7 +179,7 @@ authKey기반의 인증서 등록방법은 굉장히 간단하다. 심지어 푸
 
 
 <br>
-3. Node.js에서의 세팅
+3.Node.js에서의 세팅
 ----------
 
 서버에서의 세팅은 더욱 간단하다.
@@ -251,7 +251,7 @@ apnProvider.send(notification, deviceToken).then(function(result) {
 ~~~
 
 <br>
-4. 에러사항
+4.에러사항
 ----------
 
 
