@@ -54,9 +54,11 @@
         <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>{% endif %}
         {% if page.share != false %}{% include social-share.html %}{% endif %}
       </footer>
+
+      <div class="fb-comments" data-href="http://example.com" data-width="600" data-num-posts="2" data-colorscheme="dark"></div>
+      
     </div><!-- /.entry-content -->
 
-     <div class="fb-comments" data-href="http://example.com" data-width="600" data-num-posts="2" data-colorscheme="dark"></div>
 
     {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
   </article>
