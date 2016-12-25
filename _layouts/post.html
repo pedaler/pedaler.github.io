@@ -3,6 +3,10 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+
+<meta property="fb:app_id"       content="648563282018526" />
+
 <head>
 {% include head.html %}
 </head>
@@ -48,6 +52,17 @@
         {% if page.share != false %}{% include social-share.html %}{% endif %}
       </footer>
     </div><!-- /.entry-content -->
+
+    {% include facebook-like.html %}
+
+    {% if page.fbcomments %}
+      <hr/>
+      <h4>Comments</h4>
+      <div class="fb-comments" data-href="https://pedaler.github.io/{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="706"></div>
+    {% endif %}
+
+
+
     {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
     {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
   </article>
@@ -59,7 +74,7 @@
   </footer>
 </div><!-- /.footer-wrapper -->
 
-{% include scripts.html %}	        
+{% include scripts.html %}
 
 </body>
 </html>

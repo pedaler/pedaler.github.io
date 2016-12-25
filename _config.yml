@@ -62,20 +62,22 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
+fbcomments: yes
 
-comments :
-  provider : facebook #FIXME
-  disqus :
-    short_name : abc  #FIXME
-  livefyre :
-    site_id : abc #FIXME
-  intensedebate :
-    account : abc #FIXME
-  facebook :
-    appid : abc   #FIXME
-    num_posts: 5
-    width: 640
-    colorscheme: light
+#
+# comments :
+#   provider : facebook #FIXME
+#   disqus :
+#     short_name : abc  #FIXME
+#   livefyre :
+#     site_id : abc #FIXME
+#   intensedebate :
+#     account : abc #FIXME
+#   facebook :
+#     appid : abc   #FIXME
+#     num_posts: 5
+#     width: 640
+#     colorscheme: light
 
 
 include:

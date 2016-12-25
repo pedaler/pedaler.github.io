@@ -12,6 +12,8 @@ tags: [sample post]
 
 
 <br>
+
+
 0.무엇을 할테냐?
 ----------
 
@@ -143,6 +145,8 @@ function onNotificationAPN (event) {
 
 
 <br>
+
+
 2.ios Push 인증서 설정하기.
 ----------
 
@@ -179,6 +183,8 @@ authKey기반의 인증서 등록방법은 굉장히 간단하다. 심지어 푸
 
 
 <br>
+
+
 3.Node.js에서의 세팅
 ----------
 
@@ -251,6 +257,8 @@ apnProvider.send(notification, deviceToken).then(function(result) {
 ~~~
 
 <br>
+
+
 4.에러사항
 ----------
 
