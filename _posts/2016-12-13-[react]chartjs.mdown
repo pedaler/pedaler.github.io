@@ -2,13 +2,12 @@
 layout: post
 title: react chartjs적용하기
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-modified: 2015-12-13
+modified: 2016-12-13
 tags: [chartjs]
 ---
 
-<<<<<<< HEAD
-##react-chartjs..  
-=======
+
+
 react-chartjs..
 ====
 >>>>>>> 5e1f512ac8742ac3b2602d610f70070a193ccf84
@@ -16,7 +15,7 @@ react-chartjs..
 
 react-chartjs는 chart.js 2.0대 버전을지원하지않는다.    
 현재 페달러에서 받은 react-chartjs는   
-    
+
 
 ~~~
 "react-chartjs": "^0.8.0",  
@@ -41,7 +40,7 @@ chart.js를위한삽질..
     3. 라인차트를 띄우려는데 ~is not a function에러가 났다.  
     4. 버전문제인것을 깨닫고 react-chartjs2를 받았다.  
     5. 삽질하러간다..    
-    6. 이젠잘되는구나....이제시작이네요 
+    6. 이젠잘되는구나....이제시작이네요
 
 ~~~
 

@@ -2,9 +2,9 @@
 layout: post
 title: [phoneGap/ios] pushNotification을 사용해보자.
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-modified: 2015-12-25
+modified: 2016-12-25
 tags: [sample post]
-  
+
 ---
 
 
@@ -26,17 +26,17 @@ cordova push plugin을 통해 푸시 노티피케이션을 구현해본다.
 참고로 기존 방법이아닌. authKey를 이용한 push 설정방법을 이야기하고자 한다.
 
 
- 
+
 
 
 <br>  
-  
-      
+
+
 1. react 에서 pushNotification이용하기
 ----------
 
 
-react 에서 push Notification을 사용하기위해 기본적인 설정들이 필요하다. 
+react 에서 push Notification을 사용하기위해 기본적인 설정들이 필요하다.
 
 이는 당연히 `ios native`에서 하는 과정들을 단지 javascript로 표현된것이다.
 
@@ -59,13 +59,13 @@ window.onload = function(){
 function initPlugin(){
 	console.log('initPlugin');
     pushNotification = 	window.plugins.pushNotification;
-    
+
 }
 ~~~
 
 이제 설정된 pushNotification으로 몇가지 등록을 해주어야한다.
 
-먼저 플랫폼을 설정해줘야한다. 
+먼저 플랫폼을 설정해줘야한다.
 
 push notification은 native 파라미터에 종속될 수 밖에 없다. 즉 native에서 해주는 설정을 그대로 해줘야할 것이다.
 
@@ -128,7 +128,7 @@ function onNotificationAPN (event) {
 ~~~
 
 
-간단히 정리하면 
+간단히 정리하면
 
 1. 앱 실행 & deviceReady 된 후,
 
@@ -137,7 +137,7 @@ function onNotificationAPN (event) {
 3. 푸시에 필요한 설정을 세팅해준 것이다.
 
 
-이와같이 설정해두면 react에서의 setting은 마무리 된것이다. 
+이와같이 설정해두면 react에서의 setting은 마무리 된것이다.
 
 
 
@@ -150,7 +150,7 @@ authKey를 기반으로한 푸시 인증서를 생성해보자.
 
 10.27 업데이트된 apple 개발문서에 authkey관련 push Noti를 하는 방법에대해 디테일한 설명이 되어있다.
 
-기존은 개인키를 만들고 푸시인증서를 만들어 해당 인증서를 다시 PKCS#12(.p12) 파일로 변환해주고  해당 키를 서버로 전달해서 사용하는 다소 번거로운 방법이었다. 
+기존은 개인키를 만들고 푸시인증서를 만들어 해당 인증서를 다시 PKCS#12(.p12) 파일로 변환해주고  해당 키를 서버로 전달해서 사용하는 다소 번거로운 방법이었다.
 
 authKey기반의 인증서 등록방법은 굉장히 간단하다. 심지어 푸시 expired타임도 없이 무기한으로 사용할 수 있다.
 
@@ -162,7 +162,7 @@ authKey기반의 인증서 등록방법은 굉장히 간단하다. 심지어 푸
 
 2. develop이나 production 용도에 맞게 push Ceritifacte를 발급 받는다.
 
- 
+
 
 3. appIDs 에서 앱을 만들고 option 중 pushNotification을 on하면 2에서 발급된 certificatie가 자동으로 붙을것이다.
 
@@ -182,10 +182,10 @@ authKey기반의 인증서 등록방법은 굉장히 간단하다. 심지어 푸
 3. Node.js에서의 세팅
 ----------
 
-서버에서의 세팅은 더욱 간단하다. 
+서버에서의 세팅은 더욱 간단하다.
 
 ~~~
- * p8파일을 서버로 옮긴다.	
+ * p8파일을 서버로 옮긴다.
 ~~~
 
 
@@ -204,12 +204,12 @@ var apn = require('apn');
 var apnProvider = new apn.Provider({  
 
      token: {
-     	
+
         key: './keys/APNsAuthKey.p8',
         // authKey를 확인해보면 keyId가 존재한다.
         keyId: 'KKKABCDE',        
         // https://developer.apple.com/account/#/membership/ 에서 팀아이디를 확인할 수 있다.
-        teamId: 'D4H8VWYX2L', 
+        teamId: 'D4H8VWYX2L',
     },
     //production 인지  develop인지 판단하는 부분이다.
     production: true // Set to true if sending a notification to a production iOS app
@@ -224,8 +224,8 @@ var notification = new apn.Notification();
 //내앱의 번들 id를 입력하면된다.
 notification.topic = 'kr.co.helloword';
 
-// 푸시를 만기시간이다 얼마만큼의 시간동안 보유할지에 대한이야기다. 
-// apns는 storeForward 방식을 사용하고 만약 단말기가 꺼져있다면 단말기가 온라인 될때 알림을 전달한다. 
+// 푸시를 만기시간이다 얼마만큼의 시간동안 보유할지에 대한이야기다.
+// apns는 storeForward 방식을 사용하고 만약 단말기가 꺼져있다면 단말기가 온라인 될때 알림을 전달한다.
 // expirytime 이 지나게되면 해당  알림을 지운다.
 notification.expiry = Math.floor(Date.now() / 1000) + 3600;
 
@@ -266,9 +266,9 @@ const CLIENT_PRELUDE = Buffer.from("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n");
 TypeError: this is not a typed array.
 ~~~
 
-구글링이 나를 도왔다. 
+구글링이 나를 도왔다.
 
-단순히 node버전이 낮아서 생긴 이슈라고 버전을 올려보란다. 
+단순히 node버전이 낮아서 생긴 이슈라고 버전을 올려보란다.
 
 가장 최신버전에 stable한 버전을 받았더니 해당 에러가 사라졌다.
 
@@ -284,4 +284,3 @@ TypeError: this is not a typed array.
 <https://eladnava.com/send-push-notifications-to-ios-devices-using-xcode-8-and-swift-3/>
 
 ++ 많은 구글링..
-

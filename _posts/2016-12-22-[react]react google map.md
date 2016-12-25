@@ -1,3 +1,13 @@
+---
+layout: post
+title: [RECT]리액트맵.
+description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+modified: 2016-12-22
+tags: [sample post]
+
+---
+
+
 ##리액트맵
 
 초삽질...
@@ -30,4 +40,3 @@ ExecutionEnvironment - 란 무엇인가?..canusedom을 찾아보다가 나온거
 
 헐..이런.. 크롬은이제 https아니면 이제 geolocation을 제공을안한다.
 어쩐지 작년에는 잘만됐는데..   
-
