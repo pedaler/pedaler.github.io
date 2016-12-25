@@ -3,12 +3,21 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-
-
-<meta property="fb:app_id"       content="648563282018526" />
-
 <head>
 {% include head.html %}
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=648563282018526";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
 </head>
 
 <body id="post" {% if page.image.feature %}class="feature"{% endif %}>
@@ -53,14 +62,8 @@
       </footer>
     </div><!-- /.entry-content -->
 
-    {% include facebook-like.html %}
 
-    {% if page.fbcomments %}
-      <hr/>
-      <h4>Comments</h4>
-      <div class="fb-comments" data-href="https://pedaler.github.io/{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="706"></div>
-    {% endif %}
-
+  <div class="fb-comments" data-href="http://example.com" data-width="600" data-num-posts="2" data-colorscheme="dark"></div>
 
 
     {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
