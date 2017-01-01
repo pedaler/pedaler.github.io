@@ -46,6 +46,7 @@ ios native를 다뤄본 개발자라면 쉽게 이해할 수 있다.
 
 
 페달러는 처음 실행히 window load => deviceReady check => react render의 과정을 거친다.(기본 보일러프로젝트 예제)
+
 ~~~
 window.onload = function(){
 	document.addEventListener('deviceready', startApp, false);
