@@ -4,11 +4,11 @@ title: [phoneGap/ios] pushNotification을 사용해보자.
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2016-12-25
 tags: [sample post]
-
 ---
 
 
-##  [phoneGap/ios] ios pushNotification을 구현해보자.+ node.js (feat. AuthKey)
+[phoneGap/ios] ios pushNotification을 구현해보자.+ node.js (feat. AuthKey)
+=====
 
 
 <br>
